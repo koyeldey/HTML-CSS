@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Red</title>
+
+<style>
+    .box{
+    width:800px;
+    height: 800px;
+    margin: auto;
+    position: relative;
+    border: 1px solid #e6e7e7;
+    background-color: #e6e7e7;
+    }
+    .faceBack{
+    width:610px;
+    height:610px;
+    margin-left: 60px;
+    margin-top: 50px;
+    border-radius: 49% 50% 50% 52% / 65% 64% 40% 40%; 
+    Border: 16px solid #000000;
+    background-color: transparent;
+    position: absolute;
+    }
+    .face{
+    width:600px;
+    height:600px;
+    margin-left: 70px;
+    margin-top: 58px;
+    border-radius: 49% 50% 50% 52% / 65% 64% 40% 40%; 
+    Border: 10px solid #ce2b2b;
+    background-color: #ce2b2b;
+    position: absolute;
+    }
+    .browBox{
+    width:350px;
+    height:100px;
+    margin-left: 210px;
+    margin-top: 250px;
+    border-radius: 0px; 
+    /* Border: 1px solid black; */
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    }
+    .browLeft{
+    width:160px;
+    height:300px;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 16px;
+    clip-path: polygon(0 0, 100% 16%, 100% 32%, 0 22%);
+    position: absolute;
+    }
+    .browRight{
+    width:160px;
+    height:300px;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 175px;
+    clip-path: polygon(0 0, 100% 16%, 100% 32%, 0 22%);
+    transform: scaleX(-1);
+    position: absolute;
+    }
+    .browCorner{
+    width:30px;
+    height:66px;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 0px;
+    border-radius: 50%;
+    transform: rotate(-2deg);
+    position: absolute; 
+    }
+    .browCornerRight{
+    width:30px;
+    height:66px;
+    background-color: black;
+    margin-top: 2px;
+    margin-left: 317px;
+    border-radius: 50%;
+    transform: rotate(2deg);
+    position: absolute; 
+    }
+    
+
+    .eyeBox{
+    width:300px;
+    height:150px;
+    margin-left: 230px;
+    margin-top: 300px;
+    /* border: 1px solid black; */
+    position: absolute;
+    z-index: 0;
+    }
+    .eyeLeft{
+    width: 150px;
+    height: 150px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    }
+    .eyeRight{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    margin-left: 140px;
+    position: absolute;
+    transform: scaleX(-1);
+    }
+    .eyeWhite{
+    width:130px;
+    height: 130px;
+    border-radius: 80%;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    }
+    .eyeBlack{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 25px;
+    margin-left: 54px;
+    position: absolute;
+    }
+    .eyeInnerWhite{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 16px;
+    margin-left: -2px;
+    position: absolute;
+    }
+    .beekBorder{
+    width:300px;
+    height:158px;
+    margin-left: 0px;
+    margin-top: -50px;
+    /* border: 1px solid black; */
+    position: absolute;
+    }
+    .beekUpBack{
+    width:280px;
+    height:280px;
+    margin-top: 50px;
+    margin-left: 8px;
+    background-color: black;
+    position: absolute;
+    clip-path: polygon(0 52%, 50% 0, 100% 52%, 50% 62%);
+}
+    .beekUp{
+    width:270px;
+    height:270px;
+    margin-top: 2px;
+    margin-left: 5px;
+    background-color: #ffda05;
+    position: absolute;
+    clip-path: polygon(0 52%, 50% 0, 100% 52%, 50% 62%);
+}
+.beekDownBack{
+    width:250px;
+    height:250px;
+    margin-top: 60px;
+    margin-left: 24px;
+    background-color: black;
+    position: absolute;
+    clip-path: polygon(0 52%, 50% 40%, 100% 52%, 50% 100%);
+    z-index: -1;
+}
+    .beekDown{
+    width:240px;
+    height:240px;
+    margin-top: 8px;
+    margin-left: 5px;
+    background-color: #ffe135;
+    position: absolute;
+    clip-path: polygon(0 52%, 50% 40%, 100% 52%, 50% 100%);
+}
+.chin{
+    width:500px;
+    height:220px;
+    margin-left: 50px;
+    margin-top: 388px;
+    border-radius: 50% 50% 50% 50% / 65% 64% 58% 60%; 
+    background-color: #E6BE95;
+    }
+
+</style>
+
+</head>
+
+<body>
+<div class="box">
+        <div class="face">
+            <div class="chin"></div>
+        </div>
+        <div class="faceBack"> </div>
+        
+      
+      
+      <div class="browBox">
+        <span class="browCorner"></span>
+          <span class="browLeft"></span>
+
+        <span class="browCornerRight"></span>
+          <span class="browRight"></span>
+      </div>
+      <div class="eyeBox">
+        <span class="eyeLeft">
+            <span class="eyeWhite">
+                <span class="eyeBlack">
+                    <span class="eyeInnerWhite"></span>
+                </span>
+            </span>
+        </span>
+
+        <span class="eyeRight">
+            <span class="eyeWhite">
+                <span class="eyeBlack">
+                    <span class="eyeInnerWhite"></span>
+                </span>
+            </span>
+        </span>
+        <div class="beekBorder"></div>
+        <div class="beekUpBack">
+            <div class="beekUp"></div>
+        </div>
+        <div class="beekDownBack">
+            <div class="beekDown"></div>
+        </div>
+        
+      </div>
+      
+      
+</div>
+</body>
+
+</html>
